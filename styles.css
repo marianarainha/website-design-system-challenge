@@ -1,0 +1,125 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+  --mango: #edae49;
+  --watermelon: hsl(352, 60%, 55%);
+  --blueberry: #00798c;
+  --pistachio: #a6c48a;
+  --soursop: #f6e7cb;
+  --peach: #dd9787;
+}
+/* HEADER */
+header {
+  padding: 2rem;
+  text-align: center;
+  height: 6rem;
+  margin: 2rem 0 3rem;
+}
+
+h1 {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 2.5rem;
+  letter-spacing: 1rem;
+  color: var(--watermelon);
+}
+
+/* Navigations anchors */
+nav {
+}
+
+.navUl {
+  padding: 1rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15rem;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #00798c;
+}
+
+.navLink:hover {
+  color: var(--watermelon);
+}
+
+/* MAIN CONTENT */
+
+main section {
+  min-height: 100px;
+  min-width: 80vw;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--watermelon);
+  margin: 5rem 0 1rem 5rem;
+  border-bottom: hsla(37, 82%, 61%, 0.3) 1px solid;
+}
+
+/* colors */
+.colorsPalette {
+  max-width: 60vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6rem;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+  left: 18rem;
+}
+.color {
+  width: 150px;
+  height: 90px;
+  border: 1px black solid;
+  border-radius: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: rgb(85, 57, 57);
+}
+
+.colorName {
+  font-weight: bold;
+}
+.colorNumber {
+}
+
+#mango {
+  background-color: #edae49;
+}
+
+#watermelon {
+  background-color: var(--watermelon);
+}
+
+#blueberry {
+  background-color: #00798c;
+}
+
+#pistachio {
+  background-color: #a6c48a;
+}
+
+#soursop {
+  background-color: #f6e7cb;
+}
+
+#peach {
+  background-color: #dd9787;
+}
+
+/* fonts */
+/* text styles */
