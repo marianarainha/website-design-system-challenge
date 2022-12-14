@@ -98,7 +98,7 @@ h2 {
 }
 
 #mango {
-  background-color: #edae49;
+  background-color: var(--mango);
 }
 
 #watermelon {
@@ -106,19 +106,19 @@ h2 {
 }
 
 #blueberry {
-  background-color: #00798c;
+  background-color: var(--blueberry);
 }
 
 #pistachio {
-  background-color: #a6c48a;
+  background-color: var(--pistachio);
 }
 
 #soursop {
-  background-color: #f6e7cb;
+  background-color: var(--soursop);
 }
 
 #peach {
-  background-color: #dd9787;
+  background-color: var(--peach);
 }
 
 /* fonts */
