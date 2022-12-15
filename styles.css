@@ -121,7 +121,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: rgb(99, 44, 44);
+  color: hsl(0, 38%, 28%);
 }
 
 .colorName {
@@ -171,7 +171,7 @@ h2 {
 .colorNumber {
 }
 
-/* fonts */
+/* FONTS */
 
 #fonts {
   display: flex;
@@ -234,7 +234,7 @@ h2 {
 .italic {
   font-style: italic;
 }
-/* text styles */
+/* TEXT STYLES */
 
 #styles {
   display: flex;
@@ -246,12 +246,12 @@ h2 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 6rem;
   align-items: center;
+  margin-top: 8rem;
 }
 
 .style {
-  margin-top: 4rem;
   text-align: left;
   width: 60vw;
 }
@@ -278,7 +278,6 @@ h2 {
   font-size: 4rem;
   letter-spacing: 1rem;
   color: var(--watermelon);
-  margin-top: 4rem;
 }
 
 #subHeading {
@@ -304,7 +303,7 @@ h2 {
   letter-spacing: 0.2rem;
 }
 
-/* Media Queries*/
+/* MEDIA QUERIES*/
 
 @media screen and (max-width: 800px) {
   nav {
@@ -319,6 +318,10 @@ h2 {
     font-size: 2rem;
   }
 
+  main section {
+    margin-bottom: 2rem;
+  }
+
   h2 {
     margin: 1rem 0 2rem 1rem;
     font-size: 1rem;
@@ -326,6 +329,7 @@ h2 {
 
   .colorsPalette {
     margin-top: 1rem;
+    gap: 2rem;
   }
   .color {
     width: 100px;
@@ -334,5 +338,29 @@ h2 {
 
   .colorName {
     font-size: 0.6em;
+  }
+
+  .fontsFamily {
+    margin-top: 1rem;
+    gap: 2rem;
+  }
+
+  .font {
+    font-size: 1rem;
+  }
+  .textStyles {
+    margin-top: 1rem;
+    gap: 3rem;
+  }
+
+  .styleProperties {
+    font-size: 1rem;
+  }
+  #mainHeading {
+    font-size: 2rem;
+  }
+
+  #subHeading {
+    font-size: 1rem;
   }
 }
