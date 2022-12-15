@@ -1,31 +1,3 @@
-<!--Your style guide should include a labeled section outlining the colors to be used.
-
-Each color should have:
-
-A name (you can come up with this name yourself)
-A box displaying the color itself.
-The CSS value used to create the color (in hex, rgb(), rgba(), hsl(), or hsla()).
-An optional description of how you intend to use the colors.
-
-Your style should include a labeled section of the fonts to be used (we recommend importing fonts from Google Fonts).
-
-For each font, the goal is to to demonstrate the various styles that you intend to use (font weight, style, size, and text decorations). To do this, you should include the following for every font:
-
-The font name
-A series of styles that you intend to use (for example, styles could include: plain, bold and italic, underlined).
-For each style, include a sentence or series of words to demonstrate the text style (our example site uses the quick brown fox…).
-Make sure to display each of the sections in the proper font, size, and style.
-
-5.
-In addition to the list of possible fonts, your style guide should include a section for specific text styles for page elements. For example, you could set main heading (<h1>) guidelines about text size, fonts, font styles, font weight, and more.
-
-Include at least 3 element styles, and ideally as many as you’d like to use in future sites.
-
-For each page element, include:
-
-A page element name (for example, “Subheading”).
-All style rules (for example, font-weight: 700).-->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -33,11 +5,19 @@ All style rules (for example, font-weight: 700).-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website Style Guide</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon_io/favicon-32x32.png"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <header>
       <h1>Website Style Guide</h1>
+
       <nav>
         <ul class="navUl">
           <li class="navLi">
@@ -56,24 +36,137 @@ All style rules (for example, font-weight: 700).-->
     <main>
       <section id="colors">
         <h2>Colors</h2>
+
         <div class="colorsPalette">
-          <div class="color" id="mango">edae49</div>
+          <div class="color" id="mango">
+            <p class="colorName">Mango</p>
+            <p class="colorNumber">hsl(37, 82%, 61%)</p>
+          </div>
+
           <div class="color" id="watermelon">
             <p class="colorName">Watermelon</p>
             <p class="colorNumber">hsl(352, 60%, 55%)</p>
           </div>
-          <div class="color" id="blueberry">00798c</div>
-          <div class="color" id="pistachio">a6c48a</div>
-          <div class="color" id="soursop">f6e7cb</div>
-          <div class="color" id="peach">dd9787</div>
+
+          <div class="color" id="blueberry">
+            <p class="colorName">Blueberry</p>
+            <p class="colorNumber">hsl(188, 100%, 27%)</p>
+          </div>
+
+          <div class="color" id="pistachio">
+            <p class="colorName">Pistachio</p>
+            <p class="colorNumber">hsl(91, 33%, 65%)</p>
+          </div>
+
+          <div class="color" id="soursop">
+            <p class="colorName">Soursop</p>
+            <p class="colorNumber">hsl(39, 70%, 88%)</p>
+          </div>
+
+          <div class="color" id="peach">
+            <p class="colorName">Peach</p>
+            <p class="colorNumber">hsl(11, 56%, 70%)</p>
+          </div>
         </div>
       </section>
+
       <section id="fonts">
         <h2>Fonts</h2>
-        <p>"Shadows Into Light"</p>
+
+        <div class="fontsFamily">
+          <div class="font" id="niramit">
+            <p class="fontName">Niramit</p>
+            <p>The book is on the table</p>
+            <p class="bold">The book is on the table</p>
+            <p class="italic">The book is on the table</p>
+          </div>
+
+          <div class="font" id="shadows">
+            <p class="fontName">Shadows Into Light</p>
+            <p>The book is on the table</p>
+            <p class="bold">The book is on the table</p>
+            <p class="italic">The book is on the table</p>
+          </div>
+
+          <div class="font" id="federicka">
+            <p class="fontName">Federicka</p>
+            <p>The book is on the table</p>
+            <p class="bold">The book is on the table</p>
+            <p class="italic">The book is on the table</p>
+          </div>
+
+          <div class="font" id="bungee">
+            <p class="fontName">Bungee Shade</p>
+            <p>The book is on the table</p>
+            <p class="bold">The book is on the table</p>
+            <p class="italic">The book is on the table</p>
+          </div>
+        </div>
       </section>
+
       <section id="styles">
         <h2>Text Styles</h2>
+
+        <div class="textStyles">
+          <div class="style">
+            <p class="styleTitle" id="mainHeading">H1: Main page heading</p>
+            <ul class="styleProperties">
+              <li>
+                <span class="propertie">Font family: </span> "Fredericka the
+                Great", cursive
+              </li>
+              <li><span class="propertie">font-size: </span> 4rem</li>
+              <li><span class="propertie">letter-spacing:</span> 1rem</li>
+              <li><span class="propertie">color:</span> hsl(352, 60%, 55%)</li>
+            </ul>
+          </div>
+
+          <div class="style">
+            <p class="styleTitle" id="subHeading">H2: Subheading</p>
+            <ul class="styleProperties">
+              <li>
+                <span class="propertie">Font family: </span> "Bungee Shade",
+                cursive
+              </li>
+              <li><span class="propertie">font-size: </span> 1.5rem</li>
+              <li><span class="propertie">letter-spacing:</span> 0.5rem</li>
+              <li><span class="propertie">color:</span> hsl(352, 60%, 55%)</li>
+              <li>
+                <span class="propertie">border-bottom:</span> hsla(37, 82%, 61%,
+                0.3) 1px solid
+              </li>
+              <li><span class="propertie">font weight:</span> bold</li>
+            </ul>
+          </div>
+
+          <div class="style">
+            <p class="styleTitle" id="paragraph">P:Paragraphs</p>
+            <ul class="styleProperties">
+              <li>
+                <span class="propertie">Font family: </span> "Bungee Shade",
+                cursive
+              </li>
+              <li><span class="propertie">font-size: </span> 1.5rem</li>
+              <li><span class="propertie">color:</span> hsl(188, 100%, 27%)</li>
+              <li><span class="propertie">line-height:</span> 1.5rem</li>
+            </ul>
+          </div>
+
+          <div class="style">
+            <p class="styleTitle" id="anchor">A:Anchors</p>
+            <ul class="styleProperties">
+              <li>
+                <span class="propertie">Font family: </span> "Niramit",
+                sans-serif
+              </li>
+              <li><span class="propertie">font-size: </span> 1rem</li>
+              <li><span class="propertie">letter-spacing:</span> 0.2rem</li>
+              <li><span class="propertie">color:</span> hsl(11, 56%, 70%)</li>
+              <li><span class="propertie">Text decoration</span> None</li>
+              <li><span class="propertie">font weight:</span> bold</li>
+            </ul>
+          </div>
+        </div>
       </section>
     </main>
   </body>
