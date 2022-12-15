@@ -98,14 +98,19 @@ h2 {
 }
 
 /* COLORS SECTION*/
-
+#colors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .colorsPalette {
   display: flex;
   flex-wrap: wrap;
-  gap: 6rem;
+  gap: 5rem;
   justify-content: center;
   padding: 2rem;
   margin-top: 5rem;
+  max-width: 90vw;
 }
 .color {
   width: 160px;
@@ -167,13 +172,21 @@ h2 {
 }
 
 /* fonts */
+
+#fonts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .fontsFamily {
-  max-width: 100vw;
+  max-width: 90vw;
   display: flex;
   flex-wrap: wrap;
-  gap: 6rem;
+  gap: 5rem;
   justify-content: center;
   align-items: flex-start;
+  margin-top: 8rem;
 }
 .font {
   width: 300px;
@@ -183,7 +196,6 @@ h2 {
   flex-direction: column;
   justify-content: center;
   font-size: 1.2rem;
-  margin-top: 8rem;
 }
 .font:hover {
   transform: scale(1.2);
@@ -192,6 +204,7 @@ h2 {
 .fontName {
   margin-bottom: 1rem;
   font-size: 1.8rem;
+  line-height: 1.4rem;
 }
 
 .font p {
@@ -223,8 +236,13 @@ h2 {
 }
 /* text styles */
 
+#styles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .textStyles {
-  max-width: 100vw;
+  max-width: 90vw;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
